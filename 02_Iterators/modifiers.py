@@ -31,12 +31,21 @@ def main():
     grades = (5, 30, 68, 50, 100, 87, 76)
 
     # TODO Filter out odd numbers from nums
+    evens = list(filter(isEven, nums))
+    print(evens)
 
     # TODO Filter out lowercase from chars
+    upeper = list(filter(isUpper, chars))
+    print(upeper)
 
     # TODO Square all the nums
-
+    squares = list(map(square, nums))
+    print(squares)
     # TODO Sort and grade
+    grades = sorted(grades)
+    print(grades)
+    real_grades = list(map(grade, grades))
+    print(real_grades)
 
 
 if __name__ == "__main__":
